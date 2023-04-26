@@ -1,7 +1,4 @@
 from django.shortcuts import render
-
+from django.http import HttpResponse
 def myfirstview(request):
-    data={
-        'name':'django'
-    }
-    return render('index.html',request,data)
+    return HttpResponse('hola')

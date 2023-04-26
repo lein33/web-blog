@@ -1,3 +1,7 @@
 from django.shortcuts import render
 
-# Create your views here.
+def myfirstview(request):
+    data={
+        'name':'django'
+    }
+    return render('index.html',request,data)

@@ -50,3 +50,11 @@ class Manual(models.Model):
     publicacion = models.BooleanField(default=True, verbose_name='Publicacion')
     creada = models.DateField(auto_now_add=True, verbose_name='Fecha creacion')
     actualizada=models.DateField(auto_now=True, verbose_name='Fecha que se actualizo')
+
+    class Meta:
+        verbose_name='Manual'
+        verbose_name_plural='Manuales'
+        ordering=['nombre']
+    
+    def __str__(self):
+        return self.nombre

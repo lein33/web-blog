@@ -48,6 +48,9 @@ class Manual(models.Model):
     creada = models.DateField(auto_now_add=True, verbose_name='Fecha creacion')
     actualizada=models.DateField(auto_now=True, verbose_name='Fecha que se actualizo')
 
+    categoria = models.ForeignKey(Categoria,on_delete=models.CASCADE,verbose_name='Categoria')
+    autor = models.ForeignKey(Autor,on_delete=models.CASCADE,verbose_name='Autor')
+
     class Meta:
         verbose_name='Manual'
         verbose_name_plural='Manuales'

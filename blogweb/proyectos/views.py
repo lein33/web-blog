@@ -4,4 +4,4 @@ def myfirstview(request):
     persona={
         'name':'leandro'
     }
-    return render(request,'index.html',persona)
+    return render(request,'home.html',persona)

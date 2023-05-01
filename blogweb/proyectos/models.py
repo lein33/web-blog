@@ -6,7 +6,6 @@ class Categoria(models.Model):
     creada=models.DateField(auto_now_add=True, verbose_name='Fecha de creacion')
     actualizada=models.DateField(auto_now=True, verbose_name='Fecha que se actualizo')
     activa = models.BooleanField(default=True, verbose_name='Activa')
-    actualizada = models.CharField(max_length=200, verbose_name='Actualizada')
 
     class Meta:
         verbose_name='Categoria'

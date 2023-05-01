@@ -56,4 +56,4 @@ class Manual(models.Model):
         ordering=['nombre']
     
     def __str__(self):
-        return self.nombre
+        return self.titulo

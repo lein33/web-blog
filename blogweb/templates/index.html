@@ -6,11 +6,11 @@ l{% load static %}
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="{% static 'lib/consultingmx/css/style.css'%}" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" type="text/css" href="{% static 'lib/consultingmx/css/coin-slider.css'%}" />
-<script type="text/javascript" src="{% static 'lib/consultingmx/js/cufon-yui.js' %}"></script>
+<script type="text/javascript" src="{% static 'lib/consultingmx/js/cufon-yui.js'%}"></script>
 <script type="text/javascript" src="{% static 'lib/consultingmx/js/cufon-ptsans.js'%}"></script>
-<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
-<script type="text/javascript" src="js/script.js"></script>
-<script type="text/javascript" src="js/coin-slider.min.js"></script>
+<script type="text/javascript" src="{% static 'lib/consultingmx/js/jquery-1.4.2.min.js'%}"></script>
+<script type="text/javascript" src="{% static 'lib/consultingmx/js/script.js'%}"></script>
+<script type="text/javascript" src="{% static 'lib/consultingmx/js/coin-slider.min.js'%}"></script>
 </head>
 <body>
 <div class="main">
@@ -30,7 +30,7 @@ l{% load static %}
       </div>
       <div class="clr"></div>
       <div class="slider">
-        <div id="coin-slider"><a href="#"><img src="images/slide1.jpg" width="960" height="313" alt="" /></a> <a href="#"><img src="images/slide2.jpg" width="960" height="313" alt="" /></a> <a href="#"><img src="images/slide3.jpg" width="960" height="313" alt="" /></a></div>
+        <div id="coin-slider"><a href="#"><img src="{% static 'lib/consultingmx/images/slide1.jpg'%}" width="960" height="313" alt="" /></a> <a href="#"><img src="images/slide2.jpg" width="960" height="313" alt="" /></a> <a href="#"><img src="images/slide3.jpg" width="960" height="313" alt="" /></a></div>
         <div class="clr"></div>
       </div>
       <div class="clr"></div>

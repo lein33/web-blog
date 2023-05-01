@@ -1,7 +1,7 @@
 from django.db import models
 
 # Create your models here.
-class Categoria(models.Nodel):
+class Categoria(models.Model):
     nombre= models.CharField(max_length=200, verbose_name='Nombre')
     creada=models.DateField(auto_now_add=True, verbose_name='Fecha de creacion')
     actualizada=models.DateField(auto_now=True, verbose_name='Fecha que se actualizo')

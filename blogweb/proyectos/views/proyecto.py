@@ -4,4 +4,4 @@ def proyectolist(request):
     data ={
 
     }
-    return render(request,'proyectos/listar.html',data) 
+    return render(request,'listar.html',data) 

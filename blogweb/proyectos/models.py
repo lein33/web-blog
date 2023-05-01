@@ -53,7 +53,7 @@ class Manual(models.Model):
     class Meta:
         verbose_name='Manual'
         verbose_name_plural='Manuales'
-        ordering=['nombre']
+        ordering=['titulo']
     
     def __str__(self):
         return self.titulo

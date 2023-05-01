@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import myfirstview
+from proyectos.views.proyecto import proyectolist
 urlpatterns = [
-    path('add/',myfirstview),
+    path('add/',proyectolist),
 ]
